@@ -20,6 +20,23 @@ Recommended:
 
 - clone and install geth from https://github.com/Roburna-Blockchain-Network/roburna-go
 
+```bash
+apt-get update -y
+wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+tar -xvf go1.21.0.linux-amd64.tar.gz
+mv go /usr/local
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+source ~/.profile
+apt-get install software-properties-common build-essential -y
+git clone https://github.com//Roburna-Blockchain-Network/roburna-go
+cd roburna-go
+make all
+alias geth='/root/roburna-go/build/bin/geth'
+
+```
+
 ### Download Config/Genesis
 
 ```bash

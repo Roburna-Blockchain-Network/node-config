@@ -30,7 +30,7 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 source ~/.profile
 apt-get install software-properties-common build-essential -y
-git clone https://github.com//Roburna-Blockchain-Network/roburna-go
+git clone https://github.com/Roburna-Blockchain-Network/roburna-go
 cd roburna-go
 make all
 alias geth='/root/roburna-go/build/bin/geth'
